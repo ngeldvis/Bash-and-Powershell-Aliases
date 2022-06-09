@@ -48,6 +48,22 @@ alias gfetch="git fetch"
 alias gpull="git pull"
 alias gpush="git push"
 
+git_change() {
+    git add .
+    git commit -m "$1"
+    git push
+}
+alias gchange="git_change"
+alias gch="git_change"
+
+git_new_branch() {
+    git checkout -b "$1"
+    git commit -m "new branch - $1"
+    git push --set-upstream origin "$1"
+}
+alias gnewbranch="git_new_branch"
+alias gnb="git_new_branch"
+
 # Python
 
 python() {
