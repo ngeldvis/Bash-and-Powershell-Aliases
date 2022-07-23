@@ -114,7 +114,7 @@ function ...... {
 }
 
 function projects {
-    Set-Location "C:\Users\ngeld\Projects"
+    Set-Location ~/Projects
 }
 
 function course ($course) {
